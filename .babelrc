@@ -5,5 +5,14 @@
     ], 
     "plugins": [
         "dynamic-import-node"
-    ]
+    ],
+    "env": {
+        "test": {
+            "presets": [
+                ["env"], 
+                "stage-0",
+                "react"
+            ]
+        }
+    }
 }
