@@ -8,3 +8,4 @@ dist/index.html
 stories
 
 .DS_Store
+yarn.lock
