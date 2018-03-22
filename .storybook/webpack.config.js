@@ -5,26 +5,9 @@
 // IMPORTANT
 // When you add this file, we won't add the default configurations which is similar
 // to "React Create App". This only has babel loader to load JavaScript.
+const merge = require('webpack-merge');
+const baseConfig = require('../config/webpack.config.base');
 
-module.exports = {
-  plugins: [
-    // your custom plugins
-  ],
-  module: {
-    rules: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      use: {
-          loader: 'babel-loader',
-          options: {
-              cacheDirectory: true,
-              presets: [
-                  ["env", { "targets": { "browsers": ["last 2 versions", "> 5% in KR"] } }],
-                  "react",
-                  "stage-0"
-              ]
-          }
-      }
-    }]
-  },
-};
+module.exports = merge(baseConfig, {
+
+});
