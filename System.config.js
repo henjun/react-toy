@@ -11,6 +11,7 @@ const config = {
 }
 
 config.buildPoint = fs.readdirSync(config.appPath + '/pages')
+                     .filter(filename => filename.indexOf('Main')!==-1 )
 /*                 */.map(filename => `${config.appPath}/pages/${filename}`);
 
 module.exports = log(config);
