@@ -1,0 +1,1 @@
+export const TOGGLE_CHECK = 'APP::TOGGLE_CHECK'
